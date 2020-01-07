@@ -9,6 +9,7 @@
       <p>{{student.github_url}}</p>
       <p>{{student.website_url}}</p>
       <p>{{student.twitter}}</p>
+      <p>{{student.resume}}</p>
       <hr>
 
     </div>
