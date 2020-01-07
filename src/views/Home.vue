@@ -1,13 +1,14 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <div v-for="resume in resumes">
-      <p>{{resume.first_name}} {{resume.last_name}}</p>
-      <p>{{resume.email}}</p>
-      <p>{{resume.phone_number}}</p>
-      <p>{{resume.linkedin_url}}</p>
-      <p>{{resume.github_url}}</p>
-      <p>{{resume.website_url}}</p>
+    <div v-for="student in students">
+      <p>{{student.first_name}} {{student.last_name}}</p>
+      <p>{{student.email}}</p>
+      <p>{{student.phone_number}}</p>
+      <p>{{student.linkedin_url}}</p>
+      <p>{{student.github_url}}</p>
+      <p>{{student.website_url}}</p>
+      <p>{{student.twitter}}</p>
       <hr>
 
     </div>
@@ -21,7 +22,7 @@
 export default {
   data: function() {
     return {
-      resumes: [{
+      students: [{
         first_name: "Brian",
         last_name: "Rice",
         email: "brian@brian.com",
